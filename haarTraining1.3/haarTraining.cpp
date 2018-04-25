@@ -950,7 +950,7 @@ void icvBoost(int stage, CvIntHaarFeatures* haarFeatures,CvHaarTrainigData* haar
 					}				
 						
 				}
-				//error = (min(s+)+(t-)-(s-),(s-)+(t+)-(s+));
+				//error = (min(s+)+(t-)-(s-),(s-)+(t+)-(s+));，并计算极性
 				float errorl = sp + (tn - sn);
 				float errorr = sn + (tp - sp);
 				if (errorl > errorr)
